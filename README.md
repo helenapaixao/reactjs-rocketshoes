@@ -4,7 +4,7 @@ Esse projeto utiliza ReactJS com Redux e Redux Saga para criar um e-commerce.
 
 # Demo
 
-!Rocketshoes ReactJS - Animated gif demo](demo/demo.gif)
+![Rocketshoes ReactJS - Animated gif demo](demo/demo.gif)
 
 ## Technologies Used
 * HTML
