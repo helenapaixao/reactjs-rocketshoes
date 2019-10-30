@@ -7,13 +7,14 @@ import api from '../../services/api';
 
 import * as CartActions from '../../store/modules/cart/actions';
 
-import { ProductList } from './styles';
+import { Loading, ProductList } from './styles';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       products: [],
+      loading: true,
     };
   }
 
@@ -25,7 +26,10 @@ class Home extends Component {
       priceFormatted: formatPrice(product.price),
     }));
 
-    this.setState({ products: data });
+    this.setState({
+      products: data,
+      loading: false,
+    });
   }
 
   handleAddProduct = id => {
@@ -35,8 +39,12 @@ class Home extends Component {
   };
 
   render() {
-    const { products } = this.state;
+    const { products, loading } = this.state;
     const { amount } = this.props;
+
+    if (loading) {
+      return <Loading>Carregando</Loading>;
+    }
 
     return (
       <ProductList>

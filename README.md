@@ -1,6 +1,6 @@
 # Rocketshoes ReactJS
 
-Esse projeto utiliza ReactJS com Redux para criar um e-commerce.
+Esse projeto utiliza ReactJS com Redux e Redux Saga para criar um e-commerce.
 
 # Demo
 
@@ -11,6 +11,7 @@ Esse projeto utiliza ReactJS com Redux para criar um e-commerce.
 * CSS
 * ReactJS
 * Redux
+* Redux Saga
 
 ## License
 
